@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "herocards",
+  "info": {
+    "singularName": "herocard",
+    "pluralName": "herocards",
+    "displayName": "Hero Cards"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

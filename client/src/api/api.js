@@ -5,9 +5,11 @@ const AxiosInstance = axios.create({
   timeout: 1000,
 });
 
-export const getAPIData = async (url, ...config) => {
-  return () =>
-    AxiosInstance.get(url, ...config).then((res) => {
-      res.data;
-    });
+export const getAPIData = async (url) => {
+  try {
+    const response = await AxiosInstance.get(url);
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
 };
