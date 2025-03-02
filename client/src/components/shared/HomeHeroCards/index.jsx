@@ -4,7 +4,7 @@ const HomeHeroCards = ({ title, image }) => {
   return (
     <div className=" max-h-[755.55px] relative object-contain overflow-hidden">
       <img
-        className=" w-full h-full object-fit hover:scale-110 duration-300 ease-in-out"
+        className=" w-full h-full hover:scale-110 duration-300 ease-in-out"
         src={"http://localhost:1337" + image}
         alt={image}
       />

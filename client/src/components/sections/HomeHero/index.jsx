@@ -13,18 +13,9 @@ const HomeHero = () => {
   return (
     <div className="grid grid-cols-3 gap-1.5 mb-22.5">
       {data?.data &&
-        data?.data.map(
-          (el, index) => (
-            console.log(el),
-            (
-              <HomeHeroCards
-                key={index}
-                title={el?.title}
-                image={el?.image.url}
-              />
-            )
-          )
-        )}
+        data?.data.map((el, index) => (
+          <HomeHeroCards key={index} title={el?.title} image={el?.image.url} />
+        ))}
     </div>
   );
 };
