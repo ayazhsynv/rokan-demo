@@ -16,7 +16,7 @@ const HomeBestseller = () => {
       <p className=" text-[15px] text-text-secondary mb-10">
         Our bestselling piece, timeless and elegantly modern.
       </p>
-      <div className="flex flex-row justify-center gap-1 flex-wrap">
+      <swiper-container slides-per-view="4" space-between={10}>
         {data?.data &&
           data?.data.map(
             (el, index) => (
@@ -33,7 +33,7 @@ const HomeBestseller = () => {
               )
             )
           )}
-      </div>
+      </swiper-container>
     </div>
   );
 };

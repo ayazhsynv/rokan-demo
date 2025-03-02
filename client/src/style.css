@@ -14,3 +14,12 @@
 * {
   font-family: var(--font-display);
 }
+swiper-container {
+  width: 1600px;
+  height: 600px;
+  text-align: center;
+}
+
+swiper-slide {
+  width: 400px;
+}
