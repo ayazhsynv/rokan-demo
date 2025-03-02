@@ -2,8 +2,6 @@ import { getAPIData } from "@/api/api";
 import HomeProducts from "@/components/shared/HomeProducts";
 import { QueryKeys } from "@/constants/QueryKeys";
 import { useQuery } from "@tanstack/react-query";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import React from "react";
 
 const HomeBestseller = () => {
@@ -18,13 +16,7 @@ const HomeBestseller = () => {
       <p className=" text-[15px] text-text-secondary mb-10">
         Our bestselling piece, timeless and elegantly modern.
       </p>
-
-      <Swiper
-        spaceBetween={10}
-        slidesPerView={4}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
+      <div className="flex flex-row justify-center gap-1 flex-wrap">
         {data?.data &&
           data?.data.map(
             (el, index) => (
@@ -41,7 +33,7 @@ const HomeBestseller = () => {
               )
             )
           )}
-      </Swiper>
+      </div>
     </div>
   );
 };
