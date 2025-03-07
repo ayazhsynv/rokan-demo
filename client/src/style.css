@@ -16,8 +16,9 @@
 }
 swiper-container {
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 swiper-slide {
